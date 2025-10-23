@@ -5,6 +5,20 @@ import random
 import subprocess
 
 
+def fun1():
+    while(1):
+        num1 = input("give an number:")
+        if (num1 == 1):
+            print("Krakene hoşgeldiniz, Kraken, ağ güvenliği testleri ve web uygulama denetimleri için kullanılan bir araçtır. İçeriğinde çeşitli brute force /
+            ve keşif araçları barındırır. Bu araçlarla FTP, SSH, Telnet gibi ağ protokollerine yönelik şifre kırma işlemleri yapılabilir. Ayrıca Cpanel, WordPr/
+            ess gibi popüler web uygulamalarına karşı da şifre kırma testleri gerçekleştirebilir. Kraken, admin paneli, dizin ve alt alan adı (subdomain) bulma/
+            gibi keşif işlemleri de sağlar. Araç, ağ ve web güvenliği üzerinde yapılan testlerde kullanılır. Ancak, sadece yasal ve etik kullanım amacıyla tasa/
+            rlanmıştır. Yasadışı kullanımdan sorumlu tutulmaz.")  
+        else if (num1 == 0):
+            break()
+
+fun1()
+
 if sys.version_info < (3, 0):
     print("This script requires Python 3.")
     sys.exit(1)
