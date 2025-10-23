@@ -8,16 +8,14 @@ import subprocess
 def fun1():
     while(1):
         num1 = input("give an number:")
-        if (num1 == 1):
-            print("Krakene hoşgeldiniz, Kraken, ağ güvenliği testleri ve web uygulama denetimleri için kullanılan bir araçtır. İçeriğinde çeşitli brute force /
-            ve keşif araçları barındırır. Bu araçlarla FTP, SSH, Telnet gibi ağ protokollerine yönelik şifre kırma işlemleri yapılabilir. Ayrıca Cpanel, WordPr/
-            ess gibi popüler web uygulamalarına karşı da şifre kırma testleri gerçekleştirebilir. Kraken, admin paneli, dizin ve alt alan adı (subdomain) bulma/
-            gibi keşif işlemleri de sağlar. Araç, ağ ve web güvenliği üzerinde yapılan testlerde kullanılır. Ancak, sadece yasal ve etik kullanım amacıyla tasa/
-            rlanmıştır. Yasadışı kullanımdan sorumlu tutulmaz.")  
-        else if (num1 == 0):
-            break()
+        if (num1 == "1"):
 
-fun1()
+            time.sleep(5)
+            main()
+        elif (num1 == "0"):
+            break
+            sys.exit()
+
 
 if sys.version_info < (3, 0):
     print("This script requires Python 3.")
@@ -41,6 +39,15 @@ def clearScr():
         os.system('cls')
     else:  
         os.system('clear')
+
+def printword1():
+    print("""    Krakene hoşgeldiniz, Kraken, ağ güvenliği testleri ve web uygulama denetimleri için kullanılan bir araçtır. İçeriğinde çeşitli brute force 
+    ve keşif araçları barındırır. Bu araçlarla FTP, SSH, Telnet gibi ağ protokollerine yönelik şifre kırma işlemleri yapılabilir. Ayrıca Cpanel, WordPr
+    ess gibi popüler web uygulamalarına karşı da şifre kırma testleri gerçekleştirebilir. Kraken, admin paneli, dizin ve alt alan adı (subdomain) bulma
+    gibi keşif işlemleri de sağlar. Araç, ağ ve web güvenliği üzerinde yapılan testlerde kullanılır. Ancak, sadece yasal ve etik kullanım amacıyla tasa
+    rlanmıştır. Yasadışı kullanımdan sorumlu tutulmaz.""") 
+    time.sleep(5)
+
 
 def logo():
     clear = "\x1b[0m"
@@ -149,6 +156,7 @@ def main():
         print('\033[97m\nScript interrupted by user.\033[1;m')
         sys.exit()
 def execkraken():
+    printword1()
     main()
 
 if __name__ == "__main__":
