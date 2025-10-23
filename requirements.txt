@@ -9,3 +9,5 @@ pywifi
 pyrad
 rich
 ldap3
+netprotocols
+termcolor
