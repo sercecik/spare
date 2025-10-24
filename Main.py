@@ -8,7 +8,7 @@ import ag_arp_saldiri
 import sniffer
 import kraken
 # Başlık ASCII sanatı
-ascii_yazi = pyfiglet.figlet_format("Türkçe Siber Güvenlik Eğitimi Programına")
+ascii_yazi = pyfiglet.figlet_format("Türkçe Siber Güvenlik Eğitimi Programına Hosgeldiniz")
 renkli_yazi = colored(ascii_yazi, color="green")
 
 def ana_menu():
